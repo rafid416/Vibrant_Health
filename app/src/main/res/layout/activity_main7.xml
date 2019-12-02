@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030A24"
+    tools:context=".Main7Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/weightSpinner"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#F3530F"
+                    android:entries="@array/weight"
+                    android:paddingLeft="20dp"
+                    android:popupBackground="#F3530F"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/spinnerText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/timeInput" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Gender:"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Drinks Alcohol Level:"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Volume Consumed:"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Time Passed:"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeInput" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Weight:"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeInput" />
+
+                <Spinner
+                    android:id="@+id/volumeSpinner"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#F3530F"
+                    android:entries="@array/volume"
+                    android:paddingLeft="30dp"
+                    android:popupBackground="#F3530F"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/spinnerText"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView51"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView51"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Spinner
+                    android:id="@+id/timeSpinner"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="#F3530F"
+                    android:entries="@array/time"
+                    android:paddingLeft="30dp"
+                    android:popupBackground="#F3530F"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/spinnerText"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView52"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="120dp"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#F3530F"
+                    android:entries="@array/gender"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="35dp"
+                    android:popupBackground="#F3530F"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:theme="@style/spinnerText"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/alcoholInput"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:background="@drawable/editbac"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/editbac"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/editbac"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightSpinner" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alcoholInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alcoholInput" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="#F3530F"
+        android:onClick="bac"
+        android:text="Calculate"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="#F3530F"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weightSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+
+    <EditText
+        android:id="@+id/volumeInput"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/editbac"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

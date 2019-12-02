@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rafid.vibrant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/malogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/malogo"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Main9Activity"
+            android:parentActivityName=".Main2Activity"/>
+        <activity android:name=".Main8Activity"
+            android:parentActivityName=".Main7Activity"
+            android:theme="@style/bac"/>
+        <activity android:name=".Main7Activity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/bac"/>
+        <activity
+            android:name=".Main6Activity"
+            android:parentActivityName=".Main5Activity"
+            android:theme="@style/custom" />
+        <activity
+            android:name=".Main5Activity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/custom"/>
+        <activity
+            android:name=".Main4Activity"
+            android:parentActivityName=".Main3Activity"
+            android:theme="@style/bmi" />
+        <activity
+            android:name=".Main3Activity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/bmi" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

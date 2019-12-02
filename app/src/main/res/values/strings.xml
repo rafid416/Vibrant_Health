@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Vibrant Health</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="height">
+        <item>Centimeters</item>
+        <item>Feet</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Kilograms</item>
+        <item>Pounds</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>Ounces</item>
+        <item>ML</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Hours</item>
+        <item>Minutes</item>
+    </string-array>
+
+    <string-array name="activity">
+        <item>Sedentary</item>
+        <item>Little</item>
+        <item>Moderate</item>
+        <item>Hard</item>
+        <item>Very Hard</item>
+    </string-array>
+
+</resources>
